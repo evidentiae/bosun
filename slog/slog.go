@@ -60,7 +60,7 @@ func rmNl(v string) string {
 	return v
 }
 
-var logging Logger = &StdLog{Log: log.New(os.Stderr, "", log.LstdFlags)}
+var logging Logger = &StdLog{Log: log.New(os.Stderr, "", 0)}
 
 // Set configures l to be the default logger for slog.
 func Set(l Logger) {
