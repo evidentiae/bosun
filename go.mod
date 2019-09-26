@@ -1,6 +1,6 @@
 module bosun.org
 
-go 1.12
+go 1.11
 
 require (
 	github.com/Azure/azure-sdk-for-go v21.1.0+incompatible
