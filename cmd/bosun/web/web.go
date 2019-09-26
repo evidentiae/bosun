@@ -62,7 +62,7 @@ func init() {
 	miniprofiler.Position = "bottomleft"
 	miniprofiler.StartHidden = true
 	miniprofiler.Enable = func(r *http.Request) bool {
-		return r.Header.Get(miniprofilerHeader) != ""
+		return false
 	}
 
 	metadata.AddMetricMeta("bosun.search.puts_relayed", metadata.Counter, metadata.Request,
