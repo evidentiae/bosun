@@ -122,9 +122,9 @@ func c_iostat_linux() (opentsdb.MultiDataPoint, error) {
 				metric += "rem."
 			}
 		}
-		if len(values) == 14 {
+		if len(values) == 18 {
 			var read_sectors, msec_read, write_sectors, msec_write float64
-			for i, v := range values[3:] {
+			for i, v := range values[3:14] {
 				switch diskLinuxFields[i].key {
 				case "read_sectors":
 					read_sectors, _ = strconv.ParseFloat(v, 64)
