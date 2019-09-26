@@ -6,6 +6,7 @@ import (
 	"reflect"
 	"regexp"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -79,11 +80,18 @@ func (s *Search) Index(mdp opentsdb.MultiDataPoint) {
 			mmap[dp.Tags.String()] = p
 		}
 		if p.Timestamp < dp.Timestamp {
-			if fv, err := getFloat(dp.Value); err == nil {
+			fv, err1 := getFloat(dp.Value)
+			if err1 == nil {
 				p.DiffFromPrev = (fv - p.LastVal) / float64(dp.Timestamp-p.Timestamp)
 				p.LastVal = fv
 			} else {
-				slog.Error(err)
+				fv, err2 := strconv.ParseFloat(dp.Value.(string), 64);
+				if err2 == nil {
+					p.DiffFromPrev = (fv - p.LastVal) / float64(dp.Timestamp-p.Timestamp)
+					p.LastVal = fv
+				} else {
+					slog.Errorf("%s, %s (%s)", err1, err2, dp.Value)
+				}
 			}
 			p.Timestamp = dp.Timestamp
 		}
