@@ -327,8 +327,8 @@ github.com/tatsushid/go-fastping v0.0.0-20150818125950-06cac0fecdc2 h1:e8bQZseYL
 github.com/tatsushid/go-fastping v0.0.0-20150818125950-06cac0fecdc2/go.mod h1:B4+Kq1u5FlULTjFSM707Q6e/cOHFv0z/6QRoxubDIQ8=
 github.com/twinj/uuid v0.0.0-20151029044442-89173bcdda19 h1:HlxV0XiEKMMyjS3gGtJmmFZsxQ22GsLvA7F980il+1w=
 github.com/twinj/uuid v0.0.0-20151029044442-89173bcdda19/go.mod h1:mMgcE1RHFUFqe5AfiwlINXisXfDGro23fWdPUfOMjRY=
-github.com/ugorji/go v0.0.0-20151120143108-ea9cd21fa0bc h1:5u7Z4Qw3TbbuWzgozpk0VSntV9LHII6fWQmbxog2Xn4=
-github.com/ugorji/go v0.0.0-20151120143108-ea9cd21fa0bc/go.mod h1:hnLbHMwcvSihnDhEfx2/BzKp2xb0Y+ErdfYcrs9tkJQ=
+github.com/ugorji/go/codec v1.2.12 h1:9LC83zGrHhuUA9l16C9AHXAqEV/2wBQ4nkvumAE65EE=
+github.com/ugorji/go/codec v1.2.12/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
 github.com/vdobler/chart v0.0.0-20150914065344-293b01f8b75d h1:UQj9IK6TerGJO2sA/vwqIwEcx8QsjyAcSFwlIG8ePoY=
 github.com/vdobler/chart v0.0.0-20150914065344-293b01f8b75d/go.mod h1:803Ju4KR2simIatSIuI3wKwyU2moWJa6EjVgp3IlSpk=
 github.com/vmware/govmomi v0.16.1-0.20180228032728-a2138329bbd1 h1:Cr/D0xIySlUfoF7ZVE1LtKs29/lrfedqrSDPXUCsUcM=

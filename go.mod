@@ -111,7 +111,7 @@ require (
 	github.com/siddontang/goredis v0.0.0-20150324035039-760763f78400 // indirect
 	github.com/siddontang/rdb v0.0.0-20150307021120-fc89ed2e418d // indirect
 	github.com/syndtr/goleveldb v0.0.0-20150819051622-1a9d62f03ea9 // indirect
-	github.com/ugorji/go v0.0.0-20151120143108-ea9cd21fa0bc // indirect
+	github.com/ugorji/go/codec v1.2.12 // indirect
 	github.com/yuin/gopher-lua v0.0.0-20190514113301-1cd887cd7036 // indirect
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/image v0.0.0-20150916112557-baddd3465a05 // indirect
